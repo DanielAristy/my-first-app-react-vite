@@ -18,8 +18,15 @@ const App = ({title}) => {
   )
 }
 
-export default App
+
 
 App.propTypes = {
   title: PropTypes.string.isRequired
 };
+
+App.defaultProps = {
+  title: 'Hola mundo'
+}
+
+
+export default App;
