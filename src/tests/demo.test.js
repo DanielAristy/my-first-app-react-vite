@@ -1,4 +1,17 @@
 
-test('Esta prueba no debe de fallar', () => {
-    if(1 === 0) throw new Error('No puede divir entre cero')
-})
+describe('Pruebas en <DemoComponent', () => { 
+
+    test('Esta prueba no debe de fallar', () => {
+    
+        // 1. Inicializacion
+        const message1 = 'Hola mundo';
+    
+        // 2. Estimilo
+        const message2 = message1.trim();
+    
+        // 3. Observar el comportamiento esperado
+        expect(message1).toBe(message2);
+    
+    })
+ })
+
