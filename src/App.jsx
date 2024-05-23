@@ -2,7 +2,6 @@
 import PropTypes from 'prop-types';
 
 
-const newMensaje = 'React + Vite';
 
 const objeto = {
   titulo: 'Hola mundo',
@@ -13,6 +12,7 @@ const objeto = {
 const App = ({title = 'Hola mundo'}) => {
   return (
     <>
+      <h1>{title}</h1>
       <code>{JSON.stringify(objeto)}</code>
       <p>Esto es un parrafo</p>
     </>
