@@ -2,16 +2,17 @@
 import PropTypes from 'prop-types';
 
 
-const newMensaje = 'Daniel Aristizabal';
+const newMensaje = 'React + Vite';
+
 const objeto = {
   titulo: 'Hola mundo',
   mensaje: 'que mas pues '
 }
 
-const App = ({title}) => {
+//defaultProps correccion ***
+const App = ({title = 'Hola mundo'}) => {
   return (
     <>
-      <h1>{title} {newMensaje}</h1>
       <code>{JSON.stringify(objeto)}</code>
       <p>Esto es un parrafo</p>
     </>
@@ -24,9 +25,10 @@ App.propTypes = {
   title: PropTypes.string.isRequired
 };
 
-App.defaultProps = {
-  title: 'Hola mundo'
-}
+// Ya no se utliza de esta manera correccion ***
+// App.defaultProps = {
+//   title: 'Hola mundo'
+// }
 
 
 export default App;

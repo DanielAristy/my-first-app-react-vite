@@ -6,7 +6,6 @@ const CounterApp = ({value}) => {
 
     const handleAdd = () => setCount( count + 1 );
 
-
     const handleSubstract = () => setCount( count - 1 );
 
     const handleReset = () => setCount(value);
